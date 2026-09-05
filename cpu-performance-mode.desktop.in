@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=CPU 性能模式
+Comment=一键开启或关闭 CPU 性能模式
+Exec=/usr/bin/python3 @APP_DIR@/app.py
+Icon=@ICON_PATH@
+Terminal=false
+Categories=System;
+Keywords=CPU;Performance;Power;性能;电源;
+StartupNotify=true
+StartupWMClass=io.github.cpuperformancemode
