@@ -8,8 +8,10 @@ APPLICATIONS_DIR="${DATA_ROOT}/applications"
 ICON_DIR="${DATA_ROOT}/icons/hicolor/scalable/apps"
 
 install -d "$APP_DIR" "$APPLICATIONS_DIR" "$ICON_DIR"
-install -m 755 "$SCRIPT_DIR/app.py" "$APP_DIR/app.py"
 install -m 644 "$SCRIPT_DIR/cpu_mode_backend.py" "$APP_DIR/cpu_mode_backend.py"
+install -m 644 "$SCRIPT_DIR/gpu_power_backend.py" "$APP_DIR/gpu_power_backend.py"
+install -m 644 "$SCRIPT_DIR/monitor_panel.py" "$APP_DIR/monitor_panel.py"
+install -m 755 "$SCRIPT_DIR/app.py" "$APP_DIR/app.py"
 install -m 644 "$SCRIPT_DIR/icons/cpu-performance-mode.svg" "$ICON_DIR/cpu-performance-mode.svg"
 
 sed \

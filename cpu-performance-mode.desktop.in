@@ -1,11 +1,11 @@
 [Desktop Entry]
 Type=Application
 Name=CPU 性能模式
-Comment=一键开启或关闭 CPU 性能模式
+Comment=调节 CPU 和 GPU，查看 SSH 登录与防挖矿监控
 Exec=/usr/bin/python3 @APP_DIR@/app.py
 Icon=@ICON_PATH@
 Terminal=false
 Categories=System;
-Keywords=CPU;Performance;Power;性能;电源;
+Keywords=CPU;GPU;NVIDIA;SSH;Performance;Power;性能;电源;防挖矿;
 StartupNotify=true
 StartupWMClass=io.github.cpuperformancemode

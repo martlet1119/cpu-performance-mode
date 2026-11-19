@@ -1,0 +1,22 @@
+[Unit]
+Description=CPU Performance Mode SSH audit and miner containment
+After=systemd-journald.service
+
+[Service]
+Type=simple
+User=root
+Group=adm
+ExecStart=/usr/bin/python3 -I -B -u /usr/local/libexec/cpu-performance-mode-monitor/system_monitor.py
+RuntimeDirectory=cpu-performance-mode-monitor
+RuntimeDirectoryMode=0750
+StateDirectory=cpu-performance-mode-monitor
+StateDirectoryMode=0750
+UMask=0027
+NoNewPrivileges=yes
+PrivateTmp=yes
+RestrictAddressFamilies=AF_UNIX
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
